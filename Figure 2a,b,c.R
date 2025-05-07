@@ -1,8 +1,8 @@
-#Code to create plots of 3 distributions [Figure 2a]
+#Code to create plots of 3 distributions [Figures 2a,b,c]
 #Written by Utsav Biswas. Final edit in May 2025.
 
 ###############################################################################
-#Normal Distribution [Figure 2a.1]
+#Normal Distribution [Figure 2a]
 library(ggplot2)
 #Defining the mean and standard deviation
 mean_value <- 1
@@ -28,7 +28,7 @@ ggplot(data, aes(x = x, y = y)) +
   xlim(-3, 5)  
 
 ###############################################################################
-#Exponential Distribution [Figure 2a.2]
+#Exponential Distribution [Figure 2b]
 #Defining the rate parameter for the exponential distribution
 lambda <- 1  # When lambda = 1, mean = 1/lambda = 1, sd = 1/lambda = 1
 x <- seq(0, 5, length.out = 100)
@@ -52,7 +52,7 @@ ggplot(data, aes(x = x, y = y)) +
   xlim(0, 5)  
 
 ###############################################################################
-#Powerlaw Distribution [Figure 2.a.3]
+#Powerlaw Distribution [Figure 2c]
 beta <- 2 #Power-law exponent
 x <- seq(1, 5, length.out = 100)
 y <- x^(-beta)
