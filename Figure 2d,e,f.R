@@ -1,4 +1,4 @@
-#Code for Figure 2b
+#Code for Figures 2d,e,f
 #Written by Utsav Biswas. Final edit in May 2025.
 
 ###############################################################################
@@ -59,7 +59,7 @@ data$Distribution <- factor(data$Distribution, levels = c("normal", "exponential
 data_log$Distribution <- factor(data_log$Distribution, levels = c("normal", "exponential", "power law"))
 
 ###############################################################################
-#Plotting using ggplot2 [Figure 2b.1]
+#Plotting using ggplot2 [Figure 2d]
 ggplot(data, aes(x = x, y = y, color = Distribution, linetype = Distribution)) +
   geom_line(size = 2.5) +
   scale_color_manual(values = c("normal" = "brown",
@@ -77,7 +77,7 @@ ggplot(data, aes(x = x, y = y, color = Distribution, linetype = Distribution)) +
         axis.title = element_text(size = 28))
 
 ###############################################################################
-#Plotting using ggplot2  [Figure 2b.2]
+#Plotting using ggplot2  [Figure 2e]
 ggplot(data, aes(x = x, y = y, color = Distribution, linetype = Distribution)) +
   geom_line(size = 2.5) +
   scale_color_manual(values = c("normal" = "brown",
@@ -98,7 +98,7 @@ ggplot(data, aes(x = x, y = y, color = Distribution, linetype = Distribution)) +
          linetype = guide_legend(title = NULL))  # Remove linetype legend title
 
 ###############################################################################
-#Plotting using ggplot2 [Figure 2b.3] [log-log plot] [log gives natural log]
+#Plotting using ggplot2 [Figure 2f] [log-log plot] [log gives natural log]
 #Plotting the first 100 values only
 
 ggplot(data_log, aes(x = x, y = y, color = Distribution, linetype = Distribution)) +
