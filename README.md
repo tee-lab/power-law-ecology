@@ -1,5 +1,5 @@
-# Importance-of-power-law-distributions-in-ecology
-This repo contains the R codes to generate the plots in the article named - 'Importance of power-law distributions in ecology'
+Importance of power-law distributions in ecology
+
 Created: 5th May 2025 (by Utsav Biswas, 2nd yr PhD, TEELab, CES, IISc)
 Purpose: Description of git-hub repo - 'Importance of power-law distributions in ecology'
 Project summary: Me (Utsav Biswas) & Vishu (Vishwesha Guttal) have written an article on 'Importance of power-law distributions in ecology'.
@@ -17,10 +17,10 @@ Required R packages -
 
 All codes are self explanatory and have been commented wherever necessary.
 Codes -
-1. Code file name: Figure 2a (For Figures 2a.1, 2a.2 and 2a.3)
-2. Code file name: Figure 2b (For Figures 2b.1, 2b.2 and 2b.3)
+1. Code file name: Figure 2a,b,c (For Figures 2a, 2b and 2c)
+2. Code file name: Figure 2d,e,f (For Figures 2d, 2e and 2f)
 3. Code file name: Figure 3a (For Figure 3a)
 4. Code file name: Figure 3b (For Figure 3b)
 5. Code file name: Figure 3c (For Figure 3c)
-6. Code file name: Figure 4a.1 (For Figure 4a.1)
-7. Code file name: Figure 4a.2 (For Figure 4a.2)
+6. Code file name: Figure 4a (For Figure 4a)
+7. Code file name: Figure 4b (For Figure 4b)
