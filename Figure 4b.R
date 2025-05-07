@@ -1,4 +1,4 @@
-#Code for Figure 4a.2
+#Code for Figure 4b
 #To simulate two-dimensional Levy walk
 #Written by Utsav Biswas in June 2024.
 #Final edit in Jan 2025.
