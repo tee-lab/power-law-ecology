@@ -1,5 +1,4 @@
 #Code for Figure 3b.
-#Written by Utsav Biswas in May 2024.
 #Code to simulate sample mean & variance vs sample size for exponential distribution. 
 #Plotting 30 such lines (in grey) and then put an envelop (values +-2SD) around the results.
 #Final modification in April 2025.
@@ -73,18 +72,18 @@ variance_data <- do.call(rbind, lapply(names(all_variances), function(size) {
 ###############################################################################
 # Plotting sample means vs sample size with theoretical envelopes
 mean_plot <- ggplot() +
-  geom_line(data = mean_data, aes(x = SampleSize, y = SampleMean, color = Line, group = Line), size = 0.8, color = "#fdd0a2") +
+  geom_line(data = mean_data, aes(x = SampleSize, y = SampleMean, color = Line, group = Line), size = 0.5, color = "#fdd0a2") +
   geom_line(data = mean_envelopes, aes(x = SampleSize, y = MeanLower), linetype = "solid", size = 2, color = "#fb8072") +
   geom_line(data = mean_envelopes, aes(x = SampleSize, y = MeanUpper), linetype = "solid", size = 2, color = "#fb8072") +
   geom_hline(yintercept = 1, linetype = "dashed", size = 1.5) +
-  labs(title = "exponential distribution",
+  labs(title = "Exponential",
        x = "", y = "") +
   scale_y_continuous(breaks = c(0, 1, 2), limits = c(0, 2), minor_breaks = NULL) +
   theme_minimal() +
   theme(
-    plot.title = element_text(hjust = 0.5, size = 52),
-    axis.text.y = element_text(face = "bold", size = 50),
-    axis.text.x = element_text(face = "bold", size = 50),
+    plot.title = element_text(hjust = 0.5, size = 50),
+    axis.text.y = element_text(face = "bold", size = 30),
+    axis.text.x = element_text(face = "bold", size = 30),
     axis.title = element_text(size = 50),
     legend.position = "none",
     panel.grid.minor.y = element_blank(),
@@ -97,7 +96,7 @@ mean_plot <- ggplot() +
 ###############################################################################
 # Plotting sample variances vs sample size with theoretical envelopes
 variance_plot <- ggplot() +
-  geom_line(data = variance_data, aes(x = SampleSize, y = SampleVariance, color = Line, group = Line), size = 0.8, color = "#cab2d6") +
+  geom_line(data = variance_data, aes(x = SampleSize, y = SampleVariance, color = Line, group = Line), size = 0.5, color = "#cab2d6") +
   geom_line(data = variance_envelopes, aes(x = SampleSize, y = VarLower), linetype = "solid", size = 2, color = "#6a3d9a") +
   geom_line(data = variance_envelopes, aes(x = SampleSize, y = VarUpper), linetype = "solid", size = 2, color = "#6a3d9a") +
   geom_hline(yintercept = 1, linetype = "dashed", size = 1.5) +
@@ -106,9 +105,9 @@ variance_plot <- ggplot() +
   scale_y_continuous(breaks = c(0, 1, 2), limits = c(0, 2), minor_breaks = NULL) +
   theme_minimal() +
   theme(
-    plot.title = element_text(hjust = 0.5, size = 52),
-    axis.text.y = element_text(face = "bold", size = 50),
-    axis.text.x = element_text(face = "bold", size = 50),
+    plot.title = element_text(hjust = 0.5, size = 50),
+    axis.text.y = element_text(face = "bold", size = 30),
+    axis.text.x = element_text(face = "bold", size = 30),
     axis.title = element_text(size = 50),
     legend.position = "none",
     panel.grid.minor.y = element_blank(),
@@ -120,5 +119,9 @@ variance_plot <- ggplot() +
 
 # Displaying the plots side by side
 grid.arrange(mean_plot, variance_plot, ncol = 1)
+
+#Can export the plots separately also
+mean_plot
+variance_plot
 
 #Exported as TIFF at 1500x1346 pixels.
