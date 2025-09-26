@@ -1,6 +1,5 @@
 #Code for Figure 4a
 #To simulate a two-dimensional random walk in continuous space and time
-#Written by Utsav Biswas in June 2024.
 #Final edit in Jan 2025.
 
 library(animation)
