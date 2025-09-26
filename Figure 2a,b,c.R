@@ -14,14 +14,14 @@ data <- data.frame(x = x, y = y)
 ggplot(data, aes(x = x, y = y)) +
   geom_area(fill = "darkorange", alpha = 0.5) +  
   geom_line(color = "brown", size = 2.5) +   
-  labs(title = "normal distribution",
+  labs(title = "Gaussian",
        x = "x",
        y = "Probability Density") +
   theme_classic() +  
   theme(
-    plot.title = element_text(hjust = 0.5, size = 30),  
-    axis.text = element_text(face = "bold", size = 28),  
-    axis.title = element_text(size = 28),  
+    plot.title = element_text(hjust = 0.5, size = 50),  
+    axis.text = element_text(face = "bold", size = 50),  
+    axis.title = element_text(size = 50),  
     panel.grid.major = element_line(size = 0.5, linetype = 'solid', colour = "grey"),  
     panel.grid.minor = element_line(size = 0.7, linetype = 'dotted', colour = "grey")  
   ) +
@@ -38,14 +38,14 @@ data <- data.frame(x = x, y = y)
 ggplot(data, aes(x = x, y = y)) +
   geom_area(fill = "lightgreen", alpha = 0.5) +  
   geom_line(color = "darkgreen", size = 2.5) +   
-  labs(title = "exponential distribution",
+  labs(title = "Exponential",
        x = "x",
        y = "Probability Density") +
   theme_classic() + 
   theme(
-    plot.title = element_text(hjust = 0.5, size = 30),  
-    axis.text = element_text(face = "bold", size = 28),  
-    axis.title = element_text(size = 28),  
+    plot.title = element_text(hjust = 0.5, size = 50),  
+    axis.text = element_text(face = "bold", size = 50),  
+    axis.title = element_text(size = 50),  
     panel.grid.major = element_line(size = 0.5, linetype = 'solid', colour = "grey"),  
     panel.grid.minor = element_line(size = 0.7, linetype = 'dotted', colour = "grey")  
   ) +
@@ -64,14 +64,14 @@ data <- data.frame(x = x, y = y)
 ggplot(data, aes(x = x, y = y)) +
   geom_area(fill = "lightblue", alpha = 0.5) +  
   geom_line(color = "blue", size = 2.5) +       
-  labs(title = "power-law distribution",
+  labs(title = "Power-law",
        x = "x",
        y = "Probability Density") +
   theme_classic() +  
   theme(
-    plot.title = element_text(hjust = 0.5, size = 30),  
-    axis.text = element_text(face = "bold", size = 28),  
-    axis.title = element_text(size = 28),  
+    plot.title = element_text(hjust = 0.5, size = 50),  
+    axis.text = element_text(face = "bold", size = 50),  
+    axis.title = element_text(size = 50),  
     panel.grid.major = element_line(size = 0.5, linetype = 'solid', colour = "grey"),  
     panel.grid.minor = element_line(size = 0.7, linetype = 'dotted', colour = "grey")  
   )
