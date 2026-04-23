@@ -1,4 +1,5 @@
 Link to the published paper: https://link.springer.com/article/10.1007/s12045-025-1877-z
+
 Importance of power-law distributions in ecology
 
 Created: 5th May 2025 (by Utsav Biswas, 2nd yr PhD, TEELab, CES, IISc)
